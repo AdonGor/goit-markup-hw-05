@@ -99,8 +99,7 @@ img {
 .nav-menu-link:hover,
 .nav-menu-link:focus {
     color: #2196F3;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
 .nav-menu-link::after {
@@ -140,7 +139,7 @@ img {
 .header-tel:focus {
     fill: #2196F3;
     color:#2196F3;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-tel {
@@ -221,6 +220,7 @@ img {
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
 }
 
 .backdrop.is-hidden .modal {
@@ -245,7 +245,7 @@ img {
 
 .section-features {
     justify-content: center;
-    background-color: #ECECEC;
+    background-color: #ffffff;
     padding: 94px 0px 47px 0px;
 }
 
@@ -296,7 +296,7 @@ img {
 /* Секция "Чем мы занимаемся" */
 
 .section-work {
-    background-color: #ECECEC;
+    background-color: #ffffff;
     padding: 47px 0px 94px 0px;
 }
 
@@ -396,13 +396,13 @@ img {
 .social-networks-link:focus {
     background-color: #2196F3;
     color: #fff;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Постоянные клиенты */
 
 .sections-customers {
-    background-color: #ECECEC;
+    background-color: #ffffff;
     padding: 94px 0px;
 }
 
@@ -421,7 +421,7 @@ img {
 .items-customer-logo:focus {
     fill: #2196F3;
     border: 1px solid #2196F3;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Для шрифтов в "Особености" и footer mail и tel */
@@ -535,7 +535,7 @@ img {
 .footer-svg-link:focus {
     background-color: #2196F3;
     color: #fff;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-svg-icon {
@@ -588,6 +588,10 @@ img {
 
 /* Портфолио */
 
+.header-section-portfolio {
+    border-bottom: 1px solid #ECECEC;
+}
+
 /* Кнопки фильтра портфолио */
 
 .filter {
@@ -617,7 +621,7 @@ img {
     background-color: #2196F3;
     color: #FFFFFF;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-container {
@@ -656,7 +660,7 @@ img {
 .list-item:hover,
 .list-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .main-list-item {
@@ -702,7 +706,7 @@ img {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.item-img:hover .image-hover-effect {
+.list-item:hover .image-hover-effect {
     transform: translateY(-100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

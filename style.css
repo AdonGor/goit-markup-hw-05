@@ -296,13 +296,17 @@ img {
     height: 18px;
 }
 
+.form-input:focus:required,
+.form-input-textarea {
+    outline-color: #2196F3;
+}
+
 .form-field:focus-within > .svg-icon-form {
     fill: #2196F3;
 }
 
 .form-field:focus-within > .form-label {
     transform: translateY(-40px) translateX(-40px);
-    border: #2196F3;
     padding-left: 10px;
     color: #2196F3;
     font-size: 12px;
@@ -341,13 +345,14 @@ textarea {
 
 .form-field:focus-within > .form-label-textarea {
     transform: translateY(-40px) translateX(-40px);
-    padding-left: 40px;
+    padding-left: 30px;
     color: #2196F3;
     font-size: 12px;
 }
 
 .form-input-textarea:not(:placeholder-shown) + .form-label-textarea {
-   
+    transform: translateY(-40px) translateX(-40px);
+    padding-left: 30px;
 }
 
 .form-color-link {

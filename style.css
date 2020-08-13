@@ -299,6 +299,7 @@ img {
     border: #2196F3;
     padding-left: 10px;
     color: #2196F3;
+    font-size: 12px;
 }
 
 .form-input:not(:placeholder-shown) + .form-label {
@@ -336,6 +337,7 @@ textarea {
     transform: translateY(-40px) translateX(-40px);
     padding-left: 40px;
     color: #2196F3;
+    font-size: 12px;
 }
 
 .form-input-textarea:not(:placeholder-shown) + .form-label-textarea {

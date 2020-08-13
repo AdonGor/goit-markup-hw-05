@@ -35,9 +35,9 @@
         </ul>
       <address class="address-header">
         <a class="header-mail link" href="mailto:info@devstudio.com">
-        <svg class="svg-icon-header" width="16" height="11">
-          <use href="./sprite.svg#icon-envelopehover"></use>
-        </svg>info@devstudio.com</a>
+         <svg class="svg-icon-header" width="16" height="11">
+            <use href="./sprite.svg#icon-envelopehover"></use>
+          </svg>info@devstudio.com</a>
         <a class="header-tel link" href="tel:+380961111111">        
         <svg class="svg-icon-header" width="10" height="15">
           <use href="./sprite.svg#icon-smartphone"></use>
@@ -57,7 +57,7 @@
           <button class="modal-button" data-modal-open>Заказать услугу</button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <button data-modal-close><svg class="close-modal"><use href="./sprite.svg#icon-close-black"></use></svg></button>
+              <button class="modal_close_btn" data-modal-close><svg class="close-modal"><use href="./sprite.svg#icon-close-black"></use></svg></button>
               <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
                 <form class="form" autocomplete="off">
                     <label class="form-field">
@@ -82,13 +82,13 @@
                       <textarea class="form-input-textarea" name="comment" placeholder=" " required></textarea>      
                       <span class="form-label-textarea">Коментарий</span>             
                     </label>
-
-                  <div class="form-field-checkbox">
-                    <input type="checkbox" name="policy">
-                    <label for="policy">
-                      <span>Соглашаюсь с рассылкой и принимаю <a class="form-color-link" href="#">Условия договора</a></span>
-                    </label>
-                  </div>
+                    <div class="check-container">
+                      <label class="check option">
+                        <input class="check_input" type="checkbox">
+                        <span class="check_box"></span>
+                        <span class="check_box_text">Соглашаюсь с рассылкой и принимаю <a class="form-color-link" href="#">Условия договора</a></span> 
+                      </label>
+                    </div>
                     <button class="modal-button send" type="submit">Отправить</button>
                 </form>
             </div>
@@ -395,13 +395,14 @@
         </ul>
       </div>
       <div>
-        <b class="subscribe-text">Подпишитесь на рассылку</b>
-        <ul  class="subscribe">
-          <li><input class="inputtext" placeholder="   E-mail" type="email"></li>
-          <li>
+        <b class="subscribe">Подпишитесь на рассылку</b>
+        <form class="form_footer">
+          <label class="footer-label">
+            <input class="inputtext" placeholder=" " type="email" name="email" autocomplete="off" required>
+            <span class="text_email_footer">E-mail</span>
             <a class="modal-button-footer link" href="#">Подписаться<svg class="footer-svg" width="24" height="24"><use href="./sprite.svg#icon-icon"></use></svg></a>
-          </li>
-        </ul>        
+          </label>
+        </form>
       </div>
     </div>
     </footer>
